@@ -29,7 +29,7 @@ app.get("/", function (req, res) {
 
 app.post("/", async (req, res) => {
     const { messages } = req.body;
-    console.log(messages);
+    // console.log(messages);
     const completion = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: [
