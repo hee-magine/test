@@ -1,21 +1,20 @@
+// const { API_KEY } = require("./apikey.js");
+// const { PROMPT } = require("./prompt.js");
+
 const express = require("express");
 const { Configuration, OpenAIApi } = require("openai");
-const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
 const port = 3000;
 
-// import { API_KEY } from "./apikey.js";
-// import { PROMPT } from "./prompt.js";
-
 // const configuration = new Configuration({
 //     organization: "org-xctP8O1XB6NLY9K7RK9xnKiM",
 //     apiKey: `${API_KEY}`
 // });
 
-const openai = new OpenAIApi(configuration);
+// const openai = new OpenAIApi(configuration);
 
 app.use(bodyParser.json());
 app.use(cors());
