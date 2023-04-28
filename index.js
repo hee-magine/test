@@ -9,10 +9,11 @@ const port = 3000;
 
 // import { API_KEY } from "./apikey.js";
 // import { PROMPT } from "./prompt.js";
-const configuration = new Configuration({
-    organization: "org-xctP8O1XB6NLY9K7RK9xnKiM",
-    apiKey: `${API_KEY}`
-});
+
+// const configuration = new Configuration({
+//     organization: "org-xctP8O1XB6NLY9K7RK9xnKiM",
+//     apiKey: `${API_KEY}`
+// });
 
 const openai = new OpenAIApi(configuration);
 
@@ -25,5 +26,5 @@ app.get("/", function (req, res) {
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
-    console.log("prove to new commit3");
+    console.log("prove to new commit4");
 });
